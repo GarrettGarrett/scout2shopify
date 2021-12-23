@@ -40,7 +40,7 @@ const instructions = [
 function index() {
 
   const [upload, setUpload] = useState()
-  console.log("🚀 ~ file: index.js ~ line 43 ~ index ~ upload", upload?.length )
+  // console.log("🚀 ~ file: index.js ~ line 43 ~ index ~ upload", upload?.length )
   const [downloadClicked, setDownloadClicked] = useState(false)
   const [inventoryDownloadClicked, setInventoryDownloadClicked] = useState(false)
   const [effect, setEffect] = useState(false)
