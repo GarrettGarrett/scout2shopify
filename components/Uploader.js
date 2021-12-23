@@ -8,7 +8,7 @@ import { CSVReader } from 'react-papaparse'
 
 
   
-  function Uploader({upload, setUpload}) {
+  function Uploader({upload, setUpload, effect, setEffect}) {
       
     let handleOnDrop = (data) => {
         console.log('---------------------------')
@@ -29,7 +29,11 @@ import { CSVReader } from 'react-papaparse'
       }
 
     return (
-      <div className='w-full h-40 mt-2'>
+      <div 
+      onAnimationEnd={() => setEffect(false)}
+      className={`${
+        effect && "animate-wiggle"
+      }  w-full h-40 mt-2`}>
         <CSVReader
             onDrop={handleOnDrop}
             onError={handleOnError}

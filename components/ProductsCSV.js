@@ -63,7 +63,7 @@ function writeCSV(){ //returns array of arrays
 
 
 writeCSV()
-console.log("🚀 ~ file: ProductsCSV.js ~ line 63 ~ ProductsCSV ~ writeCSV()", writeCSV())
+// console.log("🚀 ~ file: ProductsCSV.js ~ line 63 ~ ProductsCSV ~ writeCSV()", writeCSV())
 
     return (
         downloadClicked ? 

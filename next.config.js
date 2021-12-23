@@ -1,11 +1,10 @@
 module.exports = {
   // reactStrictMode: true,
   env: {
-    token: process.env.token,
     to_name: process.env.to_name,
     from_name: process.env.from_name,
+    NEXT_PUBLIC_GOOGLE_ANALYTICS: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS,
 
-    
 
 
 },

@@ -60,7 +60,7 @@ function writeCSV(){ //returns array of arrays
     // Removes duplicates.  Can remove because qty is calculated.  Example yeezy size 6 + yeezy size 6 would show only 1 yeezy size 6, but with qty 2.  if i did not remove duplicates id have yeezy size 6 qty (x2) and although that is not an issue for shopify imports, it would confuse the user.
         let obj = {};
         obj.arr = uploadData;
-        console.log("🚀 ~ file: InventoryCSV.js ~ line 63 ~ writeCSV ~ obj.arr", obj.arr)
+        // console.log("🚀 ~ file: InventoryCSV.js ~ line 63 ~ writeCSV ~ obj.arr", obj.arr)
         obj.arr = obj.arr.filter((value, index, self) =>
         index === self.findIndex((t) => (
         t[1] === value[1] && t[3] === value[3]
@@ -73,7 +73,7 @@ function writeCSV(){ //returns array of arrays
 
 
 writeCSV()
-console.log("🚀 ~ file: InventoryCSV.js ~ line 63 ~ InventoryCSV ~ writeCSV()", writeCSV())
+// console.log("🚀 ~ file: InventoryCSV.js ~ line 63 ~ InventoryCSV ~ writeCSV()", writeCSV())
 
     return (
         inventoryDownloadClicked ? 
