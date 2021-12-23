@@ -6,9 +6,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.5",
+    "@tailwindcss/typography": "^0.5.0",
+    "discord.js": "^13.3.1",
+    "emailjs-com": "^3.2.0",
     "next": "latest",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-csv": "^2.2.1",
+    "react-dom": "^17.0.2",
+    "react-papaparse": "^3.18.1",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
