@@ -39,7 +39,7 @@ function writeCSV(){ //returns array of arrays
                 single_row_entry_arr.push('') //"Option2 Value"
                 single_row_entry_arr.push('') //Option3 Name
                 single_row_entry_arr.push('') //Option3 Value
-                single_row_entry_arr.push('') //"Variant SKU"
+                single_row_entry_arr.push(currentRow[0]) //"Variant SKU"
                 single_row_entry_arr.push('') //"Variant Grams"
                 single_row_entry_arr.push('shopify') //"Variant Inventory Tracker"
                 single_row_entry_arr.push('deny') //"Variant Inventory Policy"
