@@ -44,7 +44,7 @@ function writeCSV(){ //returns array of arrays
                 single_row_entry_arr.push('shopify') //"Variant Inventory Tracker"
                 single_row_entry_arr.push('deny') //"Variant Inventory Policy"
                 single_row_entry_arr.push('manual') //"Variant Fulfillment Service"
-                single_row_entry_arr.push('') //"Variant Price" @@@@@@@@?????@@@@@????@@@
+                single_row_entry_arr.push('') //"Variant Price" 
                 single_row_entry_arr.push('') //"Variant Compare At Price
                 single_row_entry_arr.push('TRUE') //"Variant Requires Shipping"
                 single_row_entry_arr.push('TRUE') //"Variant Taxable"

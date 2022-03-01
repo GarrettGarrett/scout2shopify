@@ -11,10 +11,10 @@ import { CSVReader } from 'react-papaparse'
   function Uploader({upload, setUpload, effect, setEffect}) {
       
     let handleOnDrop = (data) => {
-        console.log('---------------------------')
+       
     
         setUpload(data)
-        console.log('---------------------------')
+      
       }
     
       let handleOnError = (err, file, inputElem, reason) => {
@@ -23,9 +23,9 @@ import { CSVReader } from 'react-papaparse'
     
       let handleOnRemoveFile = (data) => {
         setUpload()
-        console.log('---------------------------')
+  
         console.log(data)
-        console.log('---------------------------')
+      
       }
 
     return (

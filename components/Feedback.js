@@ -1,5 +1,4 @@
 
-/* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';

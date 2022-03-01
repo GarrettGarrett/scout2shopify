@@ -10,12 +10,7 @@ export default function Card({instruction}) {
     <div key={instruction.stepNumber } className="bg-white px-4 py-5 sm:px-6 rounded-lg flex justify-center shadow-lg">
       <div className="flex space-x-3">
         <div className="flex-shrink-0">
-          {/* <img
-            className="h-10 w-10 rounded-full"
-            src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-            alt=""
-          /> */}
-          
+         
          <span className='text-4xl pr-4'>{instruction.stepNumber}</span>
         </div>
         <div className="min-w-0 flex-1">
@@ -34,10 +29,7 @@ export default function Card({instruction}) {
         <div className="flex-shrink-0 self-center flex">
           <Menu as="div" className="relative z-30 inline-block text-left">
             <div>
-              {/* <Menu.Button className="-m-2 p-2 rounded-full flex items-center text-gray-400 hover:text-gray-600">
-                <span className="sr-only">Open options</span>
-                <DotsVerticalIcon className="h-5 w-5" aria-hidden="true" />
-              </Menu.Button> */}
+             
             </div>
 
             <Transition
