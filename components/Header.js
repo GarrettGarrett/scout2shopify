@@ -16,14 +16,7 @@ const navigation = [
             <div className="flex items-center ">
 
             <Feedback />
-              {/* <div className="hidden ml-10 space-x-8 lg:block">
-                {navigation.map((link) => (
-                  <a key={link.name} href={link.href} className="text-base font-medium text-white hover:text-blue-50">
-                    {link.name}
-                  </a>
-                ))}
-              </div> */}
-              
+                          
             </div>
            
                 
@@ -47,13 +40,7 @@ const navigation = [
            
           </div>
           
-          {/* <div className="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
-            {navigation.map((link) => (
-              <a key={link.name} href={link.href} className="text-base font-medium text-white hover:text-blue-50">
-                {link.name}
-              </a>
-            ))}
-          </div> */}
+         
         </nav>
         
       </header>
