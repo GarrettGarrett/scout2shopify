@@ -24,90 +24,65 @@ import HeadTitle from '../components/HeadTitle'
 import Footer from '../components/Footer'
 import Blog from '../components/Blog'
 
-
 const instructions = [
   { name: 'Export inventory from Scout', img: '/exportmodal.png', description: '', stepNumber: 1},
   { name: 'Unzip the downloaded file & find inventory.csv', img: '/csv.png', w: 250, description: '', stepNumber: 2},
   { name: 'Drag & drop in the section above', img: '/csv.png', description: '', stepNumber: 3},
   // Drag and drop your scout inventory.csv file into the section above
-  // 
 
 ]
 
 
-  
-
 function index() {
-
   const [upload, setUpload] = useState()
-  // console.log("🚀 ~ file: index.js ~ line 43 ~ index ~ upload", upload?.length )
   const [downloadClicked, setDownloadClicked] = useState(false)
   const [inventoryDownloadClicked, setInventoryDownloadClicked] = useState(false)
   const [effect, setEffect] = useState(false)
-  // console.log("🚀 ~ file: index.js ~ line 30 ~ index ~ upload", upload)
   
-
-
-
 
   return (
     <>
-    <div className='bg-gray-100' >
+      <div className='bg-gray-100' >
+        <header className="sticky top-0 z-50">
+          <Header />
+        </header>
+        
+        <HeadTitle />
 
-    <header className="sticky top-0 z-50">
-      <Header />
-    </header>
-    
-    <HeadTitle />
-    {/* <HeaderSection /> */}
-
-
-
-    <div className="py-3 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-      <>
-      <Uploader upload={upload} setUpload={setUpload} effect={effect} setEffect={setEffect}/>    
-                 
-                <div className='py-2 flex flex-wrap  justify-center sm:justify-center '>
-                <ProductsCSV data={upload} downloadClicked={downloadClicked} upload={upload}/>
-                    <button 
-                    
-                    // disabled={!upload?.length > 0}
-                    onClick={()=> {
-                      upload?.length > 0 ? setDownloadClicked(!downloadClicked) : setEffect(true)
-                      
-                    }}
-                    className={`my-3 mx-3 inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500`}>
-                      <DownloadIcon className="h-6 w-6 mr-1 my-auto" aria-hidden="true" />
-                      Download Products CSV</button>
-
-                  
-                  <InventoryCSV upload={upload} inventoryDownloadClicked={inventoryDownloadClicked} />
+        <div className="py-3 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+          <>
+            <Uploader upload={upload} setUpload={setUpload} effect={effect} setEffect={setEffect}/>     
+              <div className='py-2 flex flex-wrap  justify-center sm:justify-center '>
+              <ProductsCSV data={upload} downloadClicked={downloadClicked} upload={upload}/>
                   <button 
-                  
-                  // disabled={!upload?.length}
-                    onClick={()=> {
-                      upload?.length > 0 ? setInventoryDownloadClicked(!inventoryDownloadClicked) : setEffect(true)
-                    }}
-                    className="my-3 mx-3 inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                  onClick={()=> {
+                    upload?.length > 0 ? setDownloadClicked(!downloadClicked) : setEffect(true)
                     
-                    >
-                      <DownloadIcon className="h-6 w-6 mr-1 my-auto" aria-hidden="true" />
-                      Download Inventory CSV</button>
-                  </div>
- 
+                  }}
+                  className={`my-3 mx-3 inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500`}>
+                    <DownloadIcon className="h-6 w-6 mr-1 my-auto" aria-hidden="true" />
+                    Download Products CSV</button>
 
-
-
-</>
-    <Details /> 
-    </div>
-    </div>
-    <Blog />
-    <Footer />
+                
+                <InventoryCSV upload={upload} inventoryDownloadClicked={inventoryDownloadClicked} />
+                <button 
+                  onClick={()=> {
+                    upload?.length > 0 ? setInventoryDownloadClicked(!inventoryDownloadClicked) : setEffect(true)
+                  }}
+                  className="my-3 mx-3 inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                  
+                  >
+                    <DownloadIcon className="h-6 w-6 mr-1 my-auto" aria-hidden="true" />
+                    Download Inventory CSV</button>
+                </div>
+          </>
+          <Details /> 
+        </div>
+      </div>
+      <Blog />
+      <Footer />
     </>
-
   )
-
 }
 
 export default index

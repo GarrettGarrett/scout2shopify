@@ -23,7 +23,7 @@ export default function Feedback() {
         setLoading(true)
         e.preventDefault();
     
-    emailjs.sendForm('service_axfk9rf', 'template_as9mo2q', form.current, 'user_MHlVYVr0ZcUp64v7J1L7X')
+    emailjs.sendForm(process.env.SERVICE_EMAIL, 'template_as9mo2q', form.current, process.env.USER_EMAIL)
           .then((result) => {
               console.log(result.text);
           }, (error) => {
@@ -93,7 +93,6 @@ export default function Feedback() {
                             disabled={loading}
                             type='submit'
                             // onClick={()=> setSubmitted(true)}
-                                type="submit"
                                 className="mt-4 w-full  items-center  py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                             >
                                 {loading ? 'loading..' : "Send"}

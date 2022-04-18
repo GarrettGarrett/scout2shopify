@@ -3,16 +3,10 @@
 import React, { Component, useState } from 'react'
 import { CSVReader } from 'react-papaparse'
 
-
-
-
-
-  
   function Uploader({upload, setUpload, effect, setEffect}) {
       
     let handleOnDrop = (data) => {
        
-    
         setUpload(data)
       
       }
