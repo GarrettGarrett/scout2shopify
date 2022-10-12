@@ -42,8 +42,7 @@ function index() {
 
   return (
     <>
-      {/* <div className='bg-gray-100' > */}
-      <div className='bg-gray-900' >
+      <div className='bg-gray-100' >
         {/* <header className='bg-red-500 h-2'>
           <header className='bg-orange-500 h-2'></header>
         </header> */}
