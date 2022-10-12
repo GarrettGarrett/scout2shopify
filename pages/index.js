@@ -42,6 +42,7 @@ function index() {
 
   return (
     <>
+      {/* <div className='bg-gray-100' > */}
       <div className='bg-gray-100' >
         <header className="sticky top-0 z-50">
           <Header />
