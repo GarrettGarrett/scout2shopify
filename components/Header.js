@@ -4,7 +4,6 @@ import Feedback from "./Feedback"
   
   export default function Header() {
     return (
-      // <header className="bg-blue-600">
       <header className="bg-blue-100">
       {/* <header className=""> */}
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">

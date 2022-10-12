@@ -51,7 +51,7 @@ function index() {
           <Header />
         </header> 
         
-        {/* <HeadTitle /> */}
+        <HeadTitle />
 
         <div className="py-3 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <>
