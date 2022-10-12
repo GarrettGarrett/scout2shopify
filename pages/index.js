@@ -44,7 +44,9 @@ function index() {
     <>
       {/* <div className='bg-gray-100' > */}
       <div className='bg-gray-900' >
-        <header className='bg-red-500 h-2'></header>
+        <header className='bg-red-500 h-2'>
+          <header className='bg-orange-500 h-2'></header>
+        </header>
         {/* <header className="sticky top-0 z-50">
           <Header />
         </header> */}
